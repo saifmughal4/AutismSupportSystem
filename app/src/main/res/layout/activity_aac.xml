@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Scrollable Grid Layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            android:padding="10dp">
+
+            <!-- Cards with Tags for Full Sentences -->
+            <include layout="@layout/aac_card" android:id="@+id/cardEat" android:tag="I want to eat something" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardDrink" android:tag="I want to drink water" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardPlay" android:tag="I want to play outside" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardSleep" android:tag="I want to sleep now" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardHappy" android:tag="I am feeling happy" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardSad" android:tag="I am feeling sad" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardAngry" android:tag="I am feeling angry" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardGo" android:tag="I want to go outside" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardStop" android:tag="Please stop this" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardMore" android:tag="I want more" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardLess" android:tag="I want less of this" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardMom" android:tag="I want to see mom" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardDad" android:tag="I want to see dad" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardFriend" android:tag="I want to play with my friend" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardTeacher" android:tag="I want to talk to my teacher" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardHello" android:tag="Hello, how are you?" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardHelp" android:tag="I need help with this" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardYes" android:tag="Yes, I agree" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardNo" android:tag="No, I disagree" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+            <include layout="@layout/aac_card" android:id="@+id/cardThankYou" android:tag="Thank you for your help" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:layout_columnWeight="1" />
+        </androidx.gridlayout.widget.GridLayout>
+    </ScrollView>
+</LinearLayout>

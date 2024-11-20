@@ -1,0 +1,13 @@
+<resources>
+    <style name="roundimageview" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/green</item>
+    </style>
+    <style name="MyCard" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeColor">@color/green</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="rippleColor">@color/blue</item>
+        <item name="cardBackgroundColor">@color/light_yellow</item>
+    </style>
+</resources>

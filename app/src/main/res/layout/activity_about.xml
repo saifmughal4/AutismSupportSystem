@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="About Us"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:src="@drawable/about" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="At Autism Support System, we understand the unique challenges faced by individuals with autism and their families. Our mission is to provide personalized, accessible, and effective tools that support the daily lives of people on the autism spectrum. Through the development of this mobile application, we aim to empower individuals, caregivers, and families by offering essential resources, tools, and community connections to foster growth, learning, and independence."
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:layout_marginVertical="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="A New Study Shows The Importance Of Early Diagnosis Of Autism Spectrum Disorder"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginVertical="10dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/one" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="A new study from The Society for Research in Child Development (SRCD) documents that visible social-communication differences for infants with Autism Spectrum Disorder (ASD) unfold by 9 months, pointing to a critical window for targeted intervention."
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:layout_marginVertical="10dp"
+                />
+
+            <Button
+                android:id="@+id/read1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="READ MORE"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/rwo" />
+
+            <Button
+                android:id="@+id/blogButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="BLOGS"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

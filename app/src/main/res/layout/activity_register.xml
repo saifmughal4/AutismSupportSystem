@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- App Logo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Welcome"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Resgster"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:src="@drawable/logdoc"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autism Support System"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <!-- User Inputs -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Name"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/CPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Additional Kid Inputs -->
+        <EditText
+            android:id="@+id/kidAgeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kid's Age"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/kidGenderEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kid's Gender"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/kidHeightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kid's Height (cm)"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/kidWeightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kid's Weight (kg)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/kidHistoryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kid's Medical History"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/kidLifestyleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lifestyle Habits"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Profile Photo -->
+        <ImageView
+            android:id="@+id/kidImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/pic_place_holder" />
+
+        <Button
+            android:id="@+id/selectPhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Kid's Photo"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF9800" />
+
+
+        <!-- Sign Up Button -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            card_view:strokeColor="@color/white"
+            android:layout_marginBottom="30dp"
+            card_view:strokeWidth="2dp"
+            app:cardCornerRadius="300dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                app:cornerRadius="20dp"
+                android:text="SIGN IN"
+                android:background="@android:color/transparent" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

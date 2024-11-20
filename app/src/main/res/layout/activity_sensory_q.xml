@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_background">
+
+  <!-- Toolbar with back arrow and title -->
+  <androidx.appcompat.widget.Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      >
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:contentDescription="Back Arrow"
+        android:padding="8dp"
+        android:layout_gravity="start" />
+
+    <TextView
+        android:id="@+id/sensorySupportTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sensory Support"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+  </androidx.appcompat.widget.Toolbar>
+
+  <!-- Counter TextView -->
+  <TextView
+      android:id="@+id/questionCounter"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_gravity="center_horizontal"
+      android:text="1 of 20"
+      android:textSize="16sp"
+      android:textStyle="normal"
+      android:textColor="@color/white" />
+
+  <!-- Question Text Box -->
+  <TextView
+      android:id="@+id/questionText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:padding="16dp"
+      android:text="What is your favorite sensory activity?"
+      android:textSize="30sp"
+      android:textColor="@color/white"
+      android:textStyle="bold" />
+
+  <!-- RadioGroup with RadioButtons -->
+  <RadioGroup
+      android:id="@+id/optionGroup"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="25dp"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Option 1"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <RadioButton
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Option 1"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <RadioButton
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Option 1"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <RadioButton
+        android:id="@+id/option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Option 1"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <RadioButton
+        android:id="@+id/option5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Option 1"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+  </RadioGroup>
+
+  <!-- Next Button -->
+  <com.google.android.material.card.MaterialCardView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      app:cardBackgroundColor="@android:color/transparent"
+      card_view:strokeColor="@color/white"
+      card_view:strokeWidth="2dp"
+      app:cardCornerRadius="300dp"
+      >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="2dp"
+        app:cornerRadius="20dp"
+        android:text="Next Question"
+        android:background="@android:color/transparent"
+        />
+
+  </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
